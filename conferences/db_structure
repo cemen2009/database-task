@@ -1,0 +1,26 @@
+Conference
+ ├─ _id
+ ├─ name
+ ├─ period
+ │    ├─ start
+ │    └─ end
+ ├─ building
+ └─ sections [ ]
+      ├─ title
+      ├─ number
+      ├─ presiding
+      ├─ room
+      └─ speech [ ]
+           ├─ topic
+           ├─ date
+           ├─ start_time
+           ├─ duration
+           ├─ speaker { }
+           │    ├─ name
+           │    ├─ degree
+           │    ├─ workplace
+           │    ├─ job_title
+           │    └─ bio
+           └─ equipment [ ]
+                ├─ name
+                └─ quantity
