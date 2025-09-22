@@ -24,8 +24,7 @@ docker-compose up --build
 
 # ``conferences/``
 
-- ``data_to_insert``: inserted data in correct style
-- ``db_structure``: schema of the collection, inserted data should be inherited from this schema
+- ``db_structure``: schemas of the collections
 - ``init_data.py``: 
 This script connects to a MongoDB instance, inserts prepared conference data, and logs the results.
 
@@ -35,15 +34,13 @@ Reads MongoDB connection settings (host, port, user, password, database name) fr
 
 Builds a connection URI and establishes a client with pymongo.MongoClient.
 
-Defines sample data for three conferences, including metadata (name, dates, building), sections, speeches, speakers, and required equipment.
-
 Inserts the data into the ``conferences`` collection of the target database.
 
 Logs confirmation messages and outputs the inserted documents by querying the collection.
 
 ## Output example:
 
-![img.png](img.png)
+![img_2.png](img_2.png)
 
 
 ## ``projects_completing/``
